@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="theme.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="clair">
+
+    <body class="sombre">
+
+        <input type="checkbox" id="case1">
+        <label>Thème sombre</label>
+
+        <title class="titre"> Portfolio de Vincent Kuntz </title>
+        <h1 class="travail"> Travaux de recherche </h1>
+        <h2 class="1m"> Mémoire de recherche d'histoire </h2>
+        <h3> Mémoire de recherche d'histoire de M1 (titre mémoire)</h3>
+        <h3> Data Papers réalisés pour le graduate program Archival City</h3>
+        <h3> Mémoire de recherche d'histoire de M1 (titre mémoire)</h3>
+        <h3> Mémoire de recherche de Master Cultures et Métiers du Web (titre mémoire)</h3>
+        <h3> Dossier de recherche réalisés pour le graduate program DIGIS </h3>
+        <h2> <a href="https://crh.ehess.fr/docannexe/image/9348/affiche_belleville.png"> Participation au colloque (nom
+                du
+                colloque) en juin 2024 </a> </h2>
+
+    </body>
+    <script>
+
+
+        var francais = {
+            "titre": "Portfolio de Vincent Kuntz",
+            "travail": "Travaux de recherche",
+            "1m": "Mémoire de recherche d'histoire"
+        }
+        var anglais = {
+            "titre": "Vincent Kuntz Portfolio ",
+            "travail": "Research work",
+            "1m": "History dissertation"
+        }
+
+        array.forEach(element => {
+        
+            document.querySelector("titre", titre).innerHTML = 
+                
+        });
+            
+        ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var checkbox = document.getElementById('case1');
+
+        function changeTheme(theme) {
+            if (theme == 'sombre') {
+                document.body.className = 'sombre';
+                checkbox.checked = true;
+            } else {
+                document.body.className = 'clair';
+                checkbox.checked = false;
+            }
+        }
+
+        var savedTheme = localStorage.getItem('theme');
+        changeTheme(savedTheme);
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                localStorage.setItem('theme', 'sombre');
+                changeTheme('sombre');
+            } else {
+                localStorage.setItem('theme', 'clair');
+                changeTheme('clair');
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

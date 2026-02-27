@@ -1,0 +1,26 @@
+.clair {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.clair a {
+  color: #0066cc;
+}
+
+.clair a:hover {
+  color: #004499;
+}
+
+
+.sombre {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.sombre a {
+  color: #66aaff;
+}
+
+.sombre a:hover {
+  color: #99ccff;
+}
