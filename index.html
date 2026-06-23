@@ -1,104 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="theme.css" />
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .conteneur {
+      width: 90%;
+      margin: auto;
+    }
+
+    .ligne {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bloc {
+      text-align: center;
+      width: 30%;
+    }
+
+    .document {
+      width: 220px;
+      height: 310px;
+      border: 1px solid black;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .affiche {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .video {
+      display: flex;
+      margin-top: 40px;
+      gap: 20px;
+    }
+
+    .video video {
+      width: 70%;
+      border: 1px solid black;
+    }
+
+    .texte {
+      width: 30%;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    hr {
+      margin: 50px 0;
+    }
+  </style>
 </head>
 
-<body class="clair">
+<body>
 
-    <body class="sombre">
+  <div class="conteneur">
 
-        <input type="checkbox" id="case1">
-        <label>Thème sombre</label>
+    <h2>Vincent Kuntz</h2>
+    <p>Monteur | Sound design | Historien</p>
 
-        <title class="titre"> Portfolio de Vincent Kuntz </title>
-        <h1 class="travail"> Travaux de recherche </h1>
-        <h2 class="1m"> Mémoire de recherche d'histoire </h2>
-        <h3> Mémoire de recherche d'histoire de M1 (titre mémoire)</h3>
-        <h3> Data Papers réalisés pour le graduate program Archival City</h3>
-        <h3> Mémoire de recherche d'histoire de M1 (titre mémoire)</h3>
-        <h3> Mémoire de recherche de Master Cultures et Métiers du Web (titre mémoire)</h3>
-        <h3> Dossier de recherche réalisés pour le graduate program DIGIS </h3>
-        <h2> <a href="https://crh.ehess.fr/docannexe/image/9348/affiche_belleville.png"> Participation au colloque (nom
-                du
-                colloque) en juin 2024 </a> </h2>
+    <h3>Travaux de recherche</h3>
 
-    </body>
-    <script>
+    <div class="ligne">
 
+      <div class="bloc">
+        <div class="document">Mémoire 1</div>
+        <p>Titre + description</p>
+      </div>
 
-        var francais = {
-            "titre": "Portfolio de Vincent Kuntz",
-            "travail": "Travaux de recherche",
-            "1m": "Mémoire de recherche d'histoire"
-        }
-        var anglais = {
-            "titre": "Vincent Kuntz Portfolio ",
-            "travail": "Research work",
-            "1m": "History dissertation"
-        }
+      <div class="bloc">
+        <div class="document">Mémoire 2</div>
+        <p>Titre + description</p>
+      </div>
 
-    function langue()
-    {
-        var 
-    }
-    document.querySelector("titre").innerHTML
-        
-                
-     
-        
+      <div class="bloc">
+        <div class="document">Mémoire 3</div>
+        <p>Titre + description</p>
+      </div>
 
+    </div>
 
+    <div class="affiche">
+      <div class="document">Affiche colloque</div>
+      <p>Titre + description</p>
+    </div>
 
+    <hr>
 
+    <div class="video">
+      <video controls></video>
+      <div class="texte">
+        <p>Explication du projet</p>
+      </div>
+    </div>
 
+    <div class="video">
+      <div class="texte">
+        <p>Explication du projet</p>
+      </div>
+      <video controls></video>
+    </div>
 
+    <h3>Travail sur le son pour le documentaire "Vivre de la mer à Geoje"</h3>
 
+    <p>Piste 1 : Chez les restaurateurs de Geoje</p>
+    <audio controls></audio>
 
+    <p>Piste 2 : Balade en mer avec un pêcheur de Geoje</p>
+    <audio controls></audio>
 
+    <p>Piste 3 : Au sein du marché de Jagalchi</p>
+    <audio controls></audio>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        var checkbox = document.getElementById('case1');
-
-        function changeTheme(theme) {
-            if (theme == 'sombre') {
-                document.body.className = 'sombre';
-                checkbox.checked = true;
-            } else {
-                document.body.className = 'clair';
-                checkbox.checked = false;
-            }
-        }
-
-        var savedTheme = localStorage.getItem('theme');
-        changeTheme(savedTheme);
-
-        checkbox.addEventListener('change', function () {
-            if (checkbox.checked) {
-                localStorage.setItem('theme', 'sombre');
-                changeTheme('sombre');
-            } else {
-                localStorage.setItem('theme', 'clair');
-                changeTheme('clair');
-            }
-        });
-
-    </script>
+  </div>
 
 </body>
 
