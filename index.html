@@ -2,131 +2,140 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
 
-    .conteneur {
-      width: 90%;
-      margin: auto;
-    }
+        .conteneur {
+            width: 90%;
+            margin: auto;
+        }
 
-    .ligne {
-      display: flex;
-      justify-content: space-between;
-    }
+        .ligne {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .bloc {
-      text-align: center;
-      width: 30%;
-    }
+        .bloc {
+            text-align: center;
+            width: 30%;
+        }
 
-    .document {
-      width: 220px;
-      height: 310px;
-      border: 1px solid black;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .document {
+            width: 220px;
+            height: 310px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .affiche {
-      text-align: center;
-      margin-top: 40px;
-    }
+        .affiche {
+            text-align: center;
+            margin-top: 40px;
+        }
 
-    .video {
-      display: flex;
-      margin-top: 40px;
-      gap: 20px;
-    }
+        .video {
+            display: flex;
+            margin-top: 40px;
+            gap: 20px;
+        }
 
-    .video video {
-      width: 70%;
-      border: 1px solid black;
-    }
+        .video video {
+            width: 70%;
+            border: 1px solid black;
+        }
 
-    .texte {
-      width: 30%;
-    }
+        .texte {
+            width: 30%;
+        }
 
-    audio {
-      width: 100%;
-    }
+        audio {
+            width: 100%;
+        }
 
-    hr {
-      margin: 50px 0;
-    }
-  </style>
+        hr {
+            margin: 50px 0;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="conteneur">
+    <div class="conteneur">
 
-    <h2>Vincent Kuntz</h2>
-    <p>Monteur | Sound design | Historien</p>
+        <h2>Vincent Kuntz</h2>
+        <p>Monteur | Sound design | Historien</p>
 
-    <h3>Travaux de recherche</h3>
+        <h3>Travaux de recherche</h3>
 
-    <div class="ligne">
+        <div class="ligne">
 
-      <div class="bloc">
-        <div class="document">Mémoire 1</div>
-        <p>Titre + description</p>
-      </div>
+            <div class="bloc">
+                <div class="document">Mémoire 1</div>
+                <p>Titre + description</p>
+            </div>
 
-      <div class="bloc">
-        <div class="document">Mémoire 2</div>
-        <p>Titre + description</p>
-      </div>
+            <div class="bloc">
+                <div class="document">Mémoire 2</div>
+                <p>Titre + description</p>
+            </div>
 
-      <div class="bloc">
-        <div class="document">Mémoire 3</div>
-        <p>Titre + description</p>
-      </div>
+            <div class="bloc">
+                <div class="document">Mémoire 3</div>
+                <p>Titre + description</p>
+            </div>
+
+        </div>
+
+        <div class="affiche">
+            <div class="document">Affiche colloque</div>
+            <p>Titre + description</p>
+        </div>
+
+        <hr>
+
+        <div class="video">
+            <video controls></video>
+            <div class="texte">
+                <p>Explication du projet</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="texte">
+                <p>Explication du projet</p>
+            </div>
+            <video controls></video>
+        </div>
+
+        <h3>Travail sur le son pour le documentaire "Vivre de la mer à Geoje"</h3>
+
+        <figure>
+            <figcaption>Piste 1 : Chez les restaurateurs de Geoje</figcaption>
+            <audio controls src="../Portfolio/son_video/Jagalchi_mixage final.mp3"></audio>
+            <a href="../Portfolio/son_video/Jagalchi_mixage final.mp3"></a>
+        </figure>
+
+            <figure>
+            <figcaption>Piste 2 : Balade en mer avec un pêcheur de Geoje</figcaption>
+            <audio controls src="../Portfolio/son_video/Jagalchi_mixage final.mp3"></audio>
+            <a href="../Portfolio/son_video/Jagalchi_mixage final.mp3"></a>
+        </figure>
+
+            <figure>
+            <figcaption>Piste 3 : Au sein du marché de Jagalchi</figcaption>
+            <audio controls src="../Portfolio/son_video/Jagalchi_mixage final.mp3"></audio>
+            <a href="../Portfolio/son_video/Jagalchi_mixage final.mp3"></a>
+        </figure>
 
     </div>
-
-    <div class="affiche">
-      <div class="document">Affiche colloque</div>
-      <p>Titre + description</p>
-    </div>
-
-    <hr>
-
-    <div class="video">
-      <video controls></video>
-      <div class="texte">
-        <p>Explication du projet</p>
-      </div>
-    </div>
-
-    <div class="video">
-      <div class="texte">
-        <p>Explication du projet</p>
-      </div>
-      <video controls></video>
-    </div>
-
-    <h3>Travail sur le son pour le documentaire "Vivre de la mer à Geoje"</h3>
-
-    <p>Piste 1 : Chez les restaurateurs de Geoje</p>
-    <audio controls src="../Portfolio/"></audio>
-
-    <p>Piste 2 : Balade en mer avec un pêcheur de Geoje</p>
-    <audio controls></audio>
-
-    <p>Piste 3 : Au sein du marché de Jagalchi</p>
-    <audio controls></audio>
-
-  </div>
 
 </body>
 
