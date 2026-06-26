@@ -1,70 +1,190 @@
-        body {
-          font-family: Arial, sans-serif;
-          margin: 40px;
-        }
+  
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
 
+.conteneur {
+  width: 90%;
+  margin: auto;
+}
 
-        .conteneur {
-          width: 90%;
-          margin: auto;
-        }
+hr {
+  margin: 50px 0;
+}
 
-        .ligne {
-          display: flex;
-          justify-content: space-between;
-        }
+p {
+  text-align: justify;
+}
 
-        .bloc {
-          text-align: center;
-          width: 30%;
-        }
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
 
-        .document {
-          width: 220px;
-          height: 310px;
-          border: 1px solid black;
-          margin: auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+h2,
+h3 {
+  font-size: large;
+}
 
-        .affiche {
-          text-align: center;
-          margin-top: 40px;
-        }
+.ligne {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
-        .video {
-          display: flex;
-          margin-top: 40px;
-          gap: 20px;
-        }
+.bloc {
+  width: 32%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
-        .video video {
-          width: 70%;
-          border: 1px solid black;
-        }
+.bloc .img-cliquable {
+  height: 700px;
+  object-fit: cover;
+  width: 100%;
+}
 
-        .texte {
-          width: 30%;
-        }
+.texte-affiche,
+.texte-memoire {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.4;
+}
 
-        p {
-            text-align: justify;
-        }
+.texte-memoire {
+  font-style: italic;
+}
 
-        h3 {
-          text-align: center;
-          font-size: large;
-        }
+.affiche {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.affiche-img {
+  width: 60%;
+  max-width: 500px;
+}
 
-        audio {
-          width: 100%;
-        }
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
 
-        hr {
-          margin: 50px 0;
-        }
+.image-inverse {
+  flex-direction: row-reverse;
+}
 
-        
+.lien-image {
+  width: 62%;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.image .texte,
+.image-inverse .texte {
+  width: 35%;
+}
+
+.img-cliquable,
+.img-projet {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.img-cliquable:hover {
+  transform: scale(1.05);
+}
+
+.img-projet:hover {
+  transform: scale(1.03);
+}
+
+audio {
+  width: 100%;
+}
+
+.video {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  align-items: center;
+}
+
+.video .texte {
+  width: 30%;
+}
+
+.video iframe,
+.video video {
+  width: 65%;
+  height: 360px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+}
+
+/*  La partie ci dessous, utilisé pour cacher le bouton de téléchargement des PDF de mémoire ont été générés via IA, ne sachant comment faire pour éviter 
+tout téléchargement sans mon consentement*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenu-modal {
+  position: relative;
+  margin: 5vh auto;
+  width: 80%;
+  height: 90vh;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.fermer {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #d9534f;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fermer:hover {
+  background-color: #c9302c;
+}
+
+        /*Le code généré s'arrete ici*/
