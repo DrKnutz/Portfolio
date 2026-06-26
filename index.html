@@ -4,66 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="theme.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-
-        .conteneur {
-            width: 90%;
-            margin: auto;
-        }
-
-        .ligne {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .bloc {
-            text-align: center;
-            width: 30%;
-        }
-
-        .document {
-            width: 220px;
-            height: 310px;
-            border: 1px solid black;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .affiche {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .video {
-            display: flex;
-            margin-top: 40px;
-            gap: 20px;
-        }
-
-        .video video {
-            width: 70%;
-            border: 1px solid black;
-        }
-
-        .texte {
-            width: 30%;
-        }
-
-        audio {
-            width: 100%;
-        }
-
-        hr {
-            margin: 50px 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -71,7 +13,7 @@
     <div class="conteneur">
 
         <h2>Vincent Kuntz</h2>
-        <p>Monteur | Sound design | Historien</p>
+        <h3>Monteur | Sound design | Historien</h3>
 
         <h3>Travaux de recherche</h3>
 
@@ -101,21 +43,28 @@
 
         <hr>
 
+                <h3>Au sein du Master Cultures et Métiers du Web (2024-2026)</h3>
+
         <div class="video">
-            <video controls></video>
+            <a href="https://pecherurale.mastercmw.com/" target="_blank">
+                <img src="../Portfolio/Images/Accueil_Goeje.png" alt="Vivre de la mer à Geoje">
+            </a>
             <div class="texte">
-                <p>Explication du projet</p>
+                <p> Réalisation du documentaire "Vivre de la mer à Geoje" à Busan et Geoje (Corée du Sud) en 2026. <br>
+                  <b>Gestion du projet, prise de son, bruitages, mixage, mastering, création d'ambiance sonore et montage vidéo</b></p>
             </div>
         </div>
 
         <div class="video">
             <div class="texte">
-                <p>Explication du projet</p>
+                <p>Refonte du portail des documentaires interactifs pour le master Cultures et Métiers du Web.<br>
+                    <b>Chef de projet et développement de la partie interactive en collaboration avec notre graphiste. </b>
+                </p>
             </div>
             <video controls></video>
         </div>
 
-        <h3>Travail sur le son pour le documentaire "Vivre de la mer à Geoje"</h3>
+        <h4>Travail sur le son pour le documentaire "Vivre de la mer à Geoje"</h4>
 
         <figure>
             <figcaption>Piste 1 : Au cœur du marché au poisson de Jagalchi</figcaption>
@@ -123,20 +72,29 @@
             <a href="../Portfolio/son_video/Jagalchi.mp3"></a>
         </figure>
 
-            <figure>
+        <figure>
             <figcaption>Piste 2 : Dernière livraison de poisson du jour à Geoje</figcaption>
             <audio controls src="../Portfolio/son_video/Pecheur.mp3"></audio>
             <a href="../Portfolio/son_video/Pecheur.mp3"></a>
         </figure>
 
-            <figure>
+        <figure>
             <figcaption>Piste 3 : Balade pluvieuse en bord de mer à Yeongdo</figcaption>
             <audio controls src="../Portfolio/son_video/Yeongdo.mp3"></audio>
             <a href="../Portfolio/son_video/Yeongdo.mp3"></a>
         </figure>
 
-    </div>
+        <hr>
+        <h3>En tant qu'entrepreneur</h3>
 
+        <div class="video">
+            <div class="texte">
+                <p>Tournage, réalisation et montage de capsules vidéos pour l'entreprise Tera Energies depuis février 2026.<br>
+                    A cette occassion, j'ai aussi crée une courte introduction faite sur Adobe After Effects, ainsi que recrée le logo afin de permettre des modifications éventuelles 
+                </p>
+            </div>
+            <video controls src="../Portfolio/son_video/2_contrat_perf.mp4"></video>
+        </div>
+</div>
 </body>
-
 </html>
