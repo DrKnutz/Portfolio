@@ -10,108 +10,104 @@
 </head>
 
 <body>
-    <p>
 
-        <body>
-            <div class="dnd-container">
+    <div class="dnd-container">
 
-                <h2 class="titre-grimoire" data-i18n="legal"></h2>
+        <h2 class="titre-grimoire" data-i18n="legal"></h2>
 
-                <div class="carte-sort carte-mentions">
+        <div class="carte-sort carte-mentions">
 
-                    <div class="carte-header">
-                        <h4 data-i18n="legal_info">Informations légales</h4>
-                    </div>
+            <div class="carte-header">
+                <h4 data-i18n="legal_info">Informations légales</h4>
+            </div>
 
-                    <div class="carte-desc manuscrit">
+            <div class="carte-desc manuscrit">
 
-                        <h5 class="label" data-i18n="editor"></h5>
-                        <p data-i18n="contact">
-                           
-                            <br>
-                            <br>
-                            
-                        </p><br>
+                <h5 class="label" data-i18n="editor"></h5>
+                <p data-i18n="contact">
 
-                        <h5 class="label" data-i18n="intelec_property"> </h5>
-                        <p data-i18n="int_prop_desc"> 
-                            
+                    <br>
+                    <br>
+
+                </p><br>
+
+                <h5 class="label" data-i18n="intelec_property"> </h5>
+                <p data-i18n="int_prop_desc">
 
 
-                        </p><br>
 
-                        <h5 class="label" data-i18n="host"></h5>
-                        <p data-i18n="host_desc">
-                        
+                </p><br>
 
-                        </p><br>
+                <h5 class="label" data-i18n="host"></h5>
+                <p data-i18n="host_desc">
 
-                        <h5 class="label" data-i18n="data"> </h5>
-                        <p data-i18n="legal">
-                            
-                        </p><br>
 
-                        <h5 class="label" data-i18n="property"></h5>
-                        <p data-i18n="property_desc">
-                        </p><br>
+                </p><br>
 
-                        <h5 class="label" data-i18n="AI"></h5>
-                        <p data-i18n="AI_desc">
+                <h5 class="label" data-i18n="data"> </h5>
+                <p data-i18n="data_desc">
 
-                        </p><br>
+                </p><br>
 
-                    </div>
+                <h5 class="label" data-i18n="property"></h5>
+                <p data-i18n="property_desc">
+                </p><br>
 
-                    <div class="carte-footer">
-                        <div class="footer-toggle">
-                            <span class="manuscrit"></span>
-                            <a href="index.html" data-i18n="back">  </a>
-                        </div>
-                    </div>
+                <h5 class="label" data-i18n="AI"></h5>
+                <p data-i18n="AI_desc">
 
-                </div>
+                </p><br>
 
             </div>
-        </body>
-    </p>
+
+            <div class="carte-footer">
+                <div class="footer-toggle">
+                    <span class="manuscrit"></span>
+                    <a href="index.html" data-i18n="back"> </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
 <script>
-            //multilingue//
-        let currentLang = localStorage.getItem('languePortfolio') || 'fr';
+    //multilingue//
+    let currentLang = localStorage.getItem('languePortfolio') || 'fr';
 
-        const btnFr = document.getElementById('btn-fr');
-        const btnEn = document.getElementById('btn-en');
+    const btnFr = document.getElementById('btn-fr');
+    const btnEn = document.getElementById('btn-en');
 
-        fetch('trad.json')
-            .then(response => response.json())
-            .then(translations => {
+    fetch('trad.json')
+        .then(response => response.json())
+        .then(translations => {
 
-                function setLanguage(lang) {
-                    document.querySelectorAll('[data-i18n]').forEach(el => {
-                        const key = el.getAttribute('data-i18n');
+            function setLanguage(lang) {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
 
-                        if (translations[lang] && translations[lang][key]) {
-                            if (el.getAttribute('data-i18n-target') === 'alt') {
-                                el.setAttribute('alt', translations[lang][key]);
-                            } else {
-                                el.innerHTML = translations[lang][key];
-                            }
+                    if (translations[lang] && translations[lang][key]) {
+                        if (el.getAttribute('data-i18n-target') === 'alt') {
+                            el.setAttribute('alt', translations[lang][key]);
+                        } else {
+                            el.innerHTML = translations[lang][key];
                         }
-                    });
+                    }
+                });
 
-                    localStorage.setItem('languePortfolio', lang);
-                }
+                localStorage.setItem('languePortfolio', lang);
+            }
 
-                if (btnFr) {
-                    btnFr.addEventListener('click', () => setLanguage('fr'));
-                }
-                if (btnEn) {
-                    btnEn.addEventListener('click', () => setLanguage('en'));
-                }
+            if (btnFr) {
+                btnFr.addEventListener('click', () => setLanguage('fr'));
+            }
+            if (btnEn) {
+                btnEn.addEventListener('click', () => setLanguage('en'));
+            }
 
-                setLanguage(currentLang);
-            });
+            setLanguage(currentLang);
+        });
 </script>
 
 </html>

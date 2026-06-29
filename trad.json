@@ -117,8 +117,8 @@
     "skill5": "RECORDING",
     "skill6": "COOKING",
     "skill": "SKILLS",
-    "language": "OTHER PROFICIENCIES AND LANGUAGES",
-    "lang_desc": "Languages: French, English (B2-C1), Spanish (B1), Japanese (basics). Proficiencies: Experienced cook, Gardening, Data analysis, Sound operator",
+    "language": "OTHER MASTERIES AND LANGUAGES",
+    "lang_desc": "Languages: French, English (B2-C1), Spanish (B1), Japanese (basics). Masteries: Experienced cook, Gardening, Data analysis, Sound operator",
     "stuff1": "Completion of three research dissertations: two in history and one focused on audiovisuals.",
     "stuff2": "Participation in a symposium to present my work in June 2024.",
     "stuff3": "Supervised a five-person team and developed the interactive part of the interactive documentaries website for the CMW Master's.",
@@ -126,7 +126,7 @@
     "stuff5": "Video recording, editing, and packaging of ten short video capsules for a company in Rouen since February 2026.",
     "stuff6": "Creation of tabletop role-playing game universes for multimedia libraries for the past two years.",
     "personality": "PERSONALITY TRAITS",
-    "pers_joke": "We still have a good laugh, right?",
+    "pers_joke": "It's fun isnt'it ? Right?",
     "feature": "ABILITIES & TRAITS",
     "feature1": "Manuscript reading:",
     "feature1_explain": "Reading, analysis, and processing of archival data (17th-18th century).",
@@ -141,7 +141,7 @@
     "dissert1_alt": "Image representing the dissertation cover. Top center, the title of the dissertation: Parisian urban disasters in the press and literary accounts of the 18th century, followed by an image representing the 1772 Hôtel-Dieu fire. The author's name, dissertation director, program, and university are at the bottom left of the page.",
     "dissert1_title": "M1 History Dissertation: Parisian urban disasters in the press and literary accounts of the 18th century.",
     "dissert1_field": "Historical Research",
-    "dissert1_desc": "In this first dissertation, I seek to determine which urban disasters struck Paris before the Revolution thanks to Hardy's Journal. Fires, floods, ice jams, and quarry collapses were my first steps into the field of research.",
+    "dissert1_desc": "In this first dissertation, I seek to determine which urban disasters struck Paris before the Revolution thanks to Hardy's Journal. Fires, floods, ice jams, and quarry collapses were my first steps into research field.",
     "dissert2": "Family and land in the 18th century",
     "dissert2_alt": "Image representing the dissertation cover. Top center, the title of the dissertation: Families and land in the 18th century. The Cochois family, plaster merchants of Belleville, followed by an image representing a hand-drawn view of the Belleville hill in 1736. The author's name, dissertation director, program, and university are at the bottom left of the page.",
     "dissert2_title": "M2 History Dissertation: Families and land in the 18th century. The Cochois family, plaster merchants of Belleville.",
@@ -159,7 +159,7 @@
     "work_progress_unknown": "Unknown",
     "presentation": "Symposium: Plaster in Paris",
     "presentation_alt": "Poster for the symposium Plaster in Paris and its suburbs from the Middle Ages to the early 19th century, held in June 2024 in Paris.",
-    "presentation_title": "Participation in the symposium on June 6, 2024. Presentation of a portion of my research results.",
+    "presentation_title": "Participation in the symposium on June 6, 2024. Presentation of a part of my research results.",
     "presentation_field": "Conference / EHESS",
     "presentation_desc": "Having worked on an archival collection provided by Thomas Le Roux, Doctor of History at EHESS, I was invited to participate in the symposium on Thursday, June 6, 2024, to present a portion of my work.",
     "school_project1": "Rural Fishing in Geoje",
@@ -203,6 +203,6 @@
     "AI": "Use of AI",
     "AI_desc": "This site used AI on three occasions. First, to prevent any downloading of research PDFs, but also to fix bugs related to the site's responsiveness, finally, I resorted to using AI for the translation of the JSON file in order to meet the deadlines.. The code was partially taken from previous work on which the site owner worked (portal redesign, documentary, personal project). Some elements were also researched on the web (Blogs, courses, etc.).",
     "back": "Back to portfolio",
-    "legal_concern": "Legal notices"
+    "legal_concern": "Legal notices "
   }
 }
