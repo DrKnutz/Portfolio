@@ -15,30 +15,34 @@
 <body>
 
     <div class="dnd-container">
-        
+
         <div class="fiche-dnd">
-                    <div class="texte-intro">
-            Donjons & Portfolio
-        </div>
+            <div class="texte-intro" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Donjons & Portfolio</span>
+                <div style="display: flex; gap: 10px;">
+                    <button id="btn-fr" class="btn-langue">FR</button>
+                    <button id="btn-en" class="btn-langue">EN</button>
+                </div>
+            </div>
             <header class="fiche-header">
                 <div class="header-nom">
-                    <span class="label">NOM DU PERSONNAGE</span>
+                    <span class="label" data-i18n="label_nom"></span>
                     <h1 class="manuscrit">Vincent Kuntz</h1>
                 </div>
                 <div class="header-details">
                     <div class="detail-box">
-                        <span class="label">CLASSES</span>
-                        <span class="manuscrit">Monteur, Sound Designer, Historien, Maitre du jeu</span>
+                        <span class="label" data-i18n="label_classes"></span>
+                        <span class="manuscrit" data-i18n="label_classes_desc"></span>
 
                     </div>
                     <div class="detail-box">
-                        <span class="label">HISTORIQUE</span>
-                        <span class="manuscrit">Master Recherche Histoire / Master Cultures et Métiers du Web</span>
+                        <span class="label" data-i18n="historic"></span>
+                        <span class="manuscrit" data-i18n="cursus"></span>
 
                     </div>
                     <div class="detail-box">
-                        <span class="label">ALIGNEMENT</span>
-                        <span class="manuscrit">Chaotique bon</span>
+                        <span class="label" data-i18n="align"></span>
+                        <span class="manuscrit" data-i18n="align_answer"></span>
 
                     </div>
                 </div>
@@ -48,22 +52,27 @@
                 <div class="col-gauche">
                     <div class="stats-et-competences">
                         <div class="col-stats">
-                            <div class="stat-block"><span class="label">RECHERCHE</span><span class="score">17</span>
+                            <div class="stat-block"><span class="label" data-i18n="skill1"></span><span
+                                    class="score">17</span>
                             </div>
-                            <div class="stat-block"><span class="label">MONTAGE</span><span class="score">14</span>
+                            <div class="stat-block"><span class="label" data-i18n="skill2"></span><span
+                                    class="score">14</span>
                             </div>
-                            <div class="stat-block"><span class="label">SOUND DESIGN</span><span class="score">16</span>
+                            <div class="stat-block"><span class="label" data-i18n="skill3"></span><span
+                                    class="score">16</span>
                             </div>
-                            <div class="stat-block"><span class="label">GESTION PROJET</span><span
+                            <div class="stat-block"><span class="label" data-i18n="skill4"></span><span
                                     class="score">14</span></div>
-                            <div class="stat-block"><span class="label">CAPTATION</span><span class="score">16</span>
+                            <div class="stat-block"><span class="label" data-i18n="skill5"></span><span
+                                    class="score">16</span>
                             </div>
-                            <div class="stat-block"><span class="label">CUISINE</span><span class="score">18</span>
+                            <div class="stat-block"><span class="label" data-i18n="skill6"></span><span
+                                    class="score">18</span>
                             </div>
                         </div>
 
                         <div class="col-skills bloc-bordure">
-                            <span class="label">COMPÉTENCES</span>
+                            <span class="label" data-i18n="skill"></span>
                             <ul>
                                 <li><span class="bulle pleine"></span> <span class="manuscrit">Premiere Pro</span></li>
                                 <li><span class="bulle pleine"></span> <span class="manuscrit">Audition</span></li>
@@ -82,11 +91,9 @@
                     </div>
 
                     <div class="bloc-maitrises bloc-bordure">
-                        <span class="label">AUTRES MAÎTRISES ET LANGUES</span>
-                        <p class="manuscrit">Langues : Français, Anglais (B2-C1), Espagnol (B1), Japonais
-                            (bases).<br><br>
-                            Maîtrises : Cuisinier expérimenté, Jardinage, Analyse de données, Opérateur son,
-                            .</p>
+                        <span class="label" data-i18n="language"></span>
+                        <p class="manuscrit" data-i18n="lang_desc"><br><br>
+                        </p>
                     </div>
                 </div>
 
@@ -94,101 +101,83 @@
                     <div class="bloc-bordure">
                         <span class="label">Actions</span>
                         <ul class="manuscrit liste-equipement">
-                            <li>Réalisation de trois mémoires de recherche : deux en histoire et un axé sur
-                                l'audiovisuel.
+                            <li data-i18n="stuff1">
                             </li>
-                            <li>Participation à un colloque pour présenter mes travaux en juin 2024.
-                            <li>Encadrement d'une équipe de cinq personnes et développement de la partie interactive du
-                                site des
-                                documentaires interactifs du master CMW</li>
-                            <li>Gestion, captation son, sound design, mixage et montage d'un documentaire portant sur
-                                les acteurs de la mer au sud de la Corée du Sud</li>
-                            <li>Captation vidéo, montage et habillage de dix capsules pour une entreprise rouennaise
-                                depuis février 2026</li>
-                            <li>Création d'univers de jeu de rôle sur table pour des médiathèques depuis deux ans</li>
+                            <li data-i18n="stuff2">
+                            <li data-i18n="stuff3"></li>
+                            <li data-i18n="stuff4"></li>
+                            <li data-i18n="stuff5"></li>
+                            <li data-i18n="stuff6"></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-droite">
                     <div class="bloc-bordure">
-                        <span class="label">TRAITS DE PERSONNALITÉ</span>
-                        <p class="manuscrit">"On rigole bien quand même ? Non ?"</p>
+                        <span class="label" data-i18n="personality"></span>
+                        <p class="manuscrit" data-i18n="pers_joke"></p>
                     </div>
 
                     <div class="bloc-bordure">
-                        <span class="label">APTITUDES & TRAITS (BIO)</span>
-                        <p class="manuscrit"><strong>Lecture de manuscrit :</strong> Lecture, analyse et traitement de
-                            données archivistiques (XVII-XVIIIe siècle)<br><br>
-                            <strong>Folie du son :</strong> Attention toute particulière aux sons qui m'entourent.
-                            Création de bruitages à partir de tout et rien.<br><br>
-                            <strong>Monteur en herbe :</strong> Capacité de montage pour des projets académiques,
-                            entrepreneuriaux, mais aussi à visée humoristique.<br><br>
-                            <strong>Création d'univers :</strong> Capacité à créer des univers à partir d'inspirations
-                            diverses et d'entraîner tout un chacun dans une aventure.
+                        <span class="label" data-i18n="feature"></span>
+                        <p class="manuscrit"><strong data-i18n="feature1"></strong> <span
+                                data-i18n="feature1_explain"></span><br><br>
+                            <strong data-i18n="feature2"></strong> <span data-i18n="feature2_explain"></span><br><br>
+                            <strong data-i18n="feature3"></strong> <span data-i18n="feature3_explain"></span><br><br>
+                            <strong data-i18n="feature4"></strong> <span data-i18n="feature4_explain"></span>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="titre-grimoire">Réalisation</h2>
+        <h2 class="titre-grimoire" data-i18n="work"></h2>
 
         <div class="grille-sorts">
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Catastrophes urbaines</h4>
+                    <h4 data-i18n="dissert1"></h4>
                 </div>
                 <div class="carte-desc">
                     <a href="../Portfolio/Images/M1_recherche.pdf" class="lien-pdf">
-                        <img src="../Portfolio/Images/M1_recherche.png"
-                            alt="Image représentant la couverture du mémoire. En haut au centre, le titre du mémoire : Les catastrophes urbaines parisiennes dans la presse et les
-                        récits littéraires du XVIIIe suivit d'une image représentant l'incendie de l'Hôtel-Dieu de 1772. On retrouve aussi le nom de rédacteur du mémoire, la directrice du mémoire, la filière, l'université en bas à gauche de la page.">
+                        <img src="../Portfolio/Images/M1_recherche.png" alt="" data-i18n="dissert1_alt"
+                            data-i18n-target="alt">
 
                     </a>
-                    <p class="manuscrit text-sort">Mémoire M1 Histoire : Les catastrophes urbaines parisiennes dans la
-                        presse et les
-                        récits littéraires du XVIIIe.</p>
+                    <p class="manuscrit text-sort" data-i18n="dissert1_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Recherche Historique</span>
+                        <span class="manuscrit" data-i18n="dissert1_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Dans ce premier mémoire, je cherche à déterminer quelles
-                                catastrophes urbaines frappaient Paris avant la Révolution grâce au Journal de Hardy.
-                                Incendies, crues, débâcles et effondrements de carrières ont été mon premier pas dans le
-                                domaine de la recherche.</p>
+                            <p class="manuscrit text-footer" data-i18n="dissert1_desc"></p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="carte-sort">
-                <div class="carte-header">
-                    <h4>Famille et terre au XVIIIe</h4>
+                <div class="carte-header" data-i18n="dissert2">
+                    <h4></h4>
                 </div>
                 <div class="carte-desc">
                     <a href="../Portfolio/Images/M2_recherche.pdf" class="lien-pdf">
-                        <img src="../Portfolio/Images/M2_Histoire.png"
-                            alt="Image représentant la couverture du mémoire. En haut au centre, le titre du mémoire : Familles et terre au XVIIIe siècle. La famille Cochois, marchands plâtriers de Belleville suivit d'une image représentant une vue de la côte de Belleville désinnée à la main en 1736. On retrouve aussi le nom de rédacteur du mémoire, la directrice du mémoire, la filière, l'université en bas à gauche de la page.">
+                        <img src="../Portfolio/Images/M2_Histoire.png" alt="" data-i18n="dissert2_alt"
+                            data-i18n-target="alt">
                     </a>
-                    <p class="manuscrit text-sort">Mémoire M2 Histoire : Familles et terre au XVIIIe siècle. La famille
-                        Cochois, marchands plâtriers de Belleville </p>
+                    <p class="manuscrit text-sort" data-i18n="dissert2_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Recherche Historique</span>
+                        <span class="manuscrit" data-i18n="dissert2_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Au cours de cette seconde année, mon intérêt pour le monde
-                                souterrain s'est affirmé. Me consacrant à l'étude de la famille Cochois entre 1720 et
-                                1770, j'ai pu retracer la vie de Jean et Jacques-François Cochois, leurs mariages, leurs
-                                méthodes d'exploitation, et accidents au sein des carrières.</p>
+                            <p class="manuscrit text-footer" data-i18n="dissert2_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -196,28 +185,24 @@
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>L'univers de Destiny</h4>
+                    <h4 data-i18n="dissert3"></h4>
                 </div>
                 <div class="carte-desc">
                     <a href="../Portfolio/Images/M1_CMW.pdf" class="lien-pdf">
-                        <img src="../Portfolio/Images/M1_CMW.png"
-                            alt="Image représentant la couverture du mémoire. En haut au centre, le titre du mémoire : Entre scénario, image et son : Création de l'univers du jeu vidéo Destiny suivit d'une image promotionelle pour la sortie du jeu Destiny en 2014. On retrouve aussi le nom de rédacteur du mémoire, la directrice du mémoire, la filière, l'université en bas à gauche de la page.">
+                        <img src="../Portfolio/Images/M1_CMW.png" alt=""
+                        alt="" data-i18n="dissert3_alt"
+                            data-i18n-target="alt">
                     </a>
-                    <p class="manuscrit text-sort">Mémoire M1 CMW : Entre scénario, image et son : Création de l'univers
-                        du jeu vidéo Destiny
-                        et son.</p>
+                    <p class="manuscrit text-sort" data-i18n="dissert3_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Analyse Vidéoludique</span>
+                        <span class="manuscrit" data-i18n="dissert3_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">En quittant le monde de la recherche en histoire, j'ai
-                                décidé de me tourner vers l'une de mes passions : le jeu vidéo. J'ai étudié l'univers de
-                                Destiny (Néo-Gothique, Alien, Wagner, Empire Romain, Lovecraft) et découvert les sources
-                                d'inspiration du studio.</p>
+                            <p class="manuscrit text-footer" data-i18n="dissert3_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -225,45 +210,39 @@
 
             <div class="carte-sort verrouille">
                 <div class="carte-header">
-                    <h4>Projet en cours</h4>
+                    <h4 data-i18n="work_progress"></h4>
                 </div>
                 <div class="carte-desc">
-                    <p class="manuscrit text-sort"> Poursuivre le développement du site lié à mon mémoire sur Destiny.
-                        Une gigantesque salle d'archives compilant tous les grimoires racontant l'histoire du jeu en
-                        français.
+                    <p class="manuscrit text-sort" data-i18n="work_progress_M3">
                     </p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Inconnu</span>
+                        <span class="manuscrit" data-i18n="work_progress_unknown">Inconnu</span>
                     </div>
                 </div>
             </div>
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Colloque : Le plâtre à Paris</h4>
+                    <h4 data-i18n="presentation"></h4>
                 </div>
                 <div class="carte-desc">
                     <a href="https://www.ehess.fr/jcms/65805_JEvent/fr/le-platre-a-paris-et-dans-sa-banlieue-du-moyen-age-au-debut-du-xixe-siecle-materiaux-acteurs-lieux"
                         target="_blank">
-                        <img src="../Portfolio/Images/affiche_belleville.png"
-                            alt="Affiche du colloque Le plâtre à Paris et dans sa banlieue du Moyen-Âge au début du XIXe siècle s'étant tenu en juin 2024 à Paris">
+                        <img src="../Portfolio/Images/affiche_belleville.png" alt="" data-i18n="presentation_alt"
+                            data-i18n-target="alt">
                     </a>
-                    <p class="manuscrit text-sort">Participation au colloque le 6 juin 2024. Présentation d'une parties
-                        de mes résultats
-                        de recherche.</p>
+                    <p class="manuscrit text-sort" data-i18n="presentation_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Conférence / EHESS</span>
+                        <span class="manuscrit" data-i18n="presentation_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Ayant travaillé sur un fonds d'archives transmis par Thomas
-                                Le Roux, docteur en histoire à l'EHESS, j'ai été invité à participer au colloque le
-                                jeudi 6 juin 2024 afin de présenter une partie de mes travaux.</p>
+                            <p class="manuscrit text-footer" data-i18n="presentation_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -271,39 +250,37 @@
 
             <div class="carte-sort verrouille">
                 <div class="carte-header">
-                    <h4>Projet en cours</h4>
+                    <h4 data-i18n="work_progress"></h4>
                 </div>
                 <div class="carte-desc">
-                    <p class="manuscrit text-sort">Une V2 à notre documentaire ? Qui sait ?</p>
+                    <p class="manuscrit text-sort" data-i18n="work_progress_docu"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Inconnu</span>
+                        <span class="manuscrit" data-i18n="work_progress_unknown"></span>
                     </div>
                 </div>
             </div>
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Pêche Rurale à Geoje</h4>
+                    <h4 data-i18n="school_project1"></h4>
                 </div>
                 <div class="carte-desc">
                     <a href="https://pecherurale.mastercmw.com/" target="_blank">
-                        <img src="../Portfolio/Images/Accueil_Goeje.png"
-                            alt="L'écran d'accueil du site Vivre de la mer à Goeje sur lequel le documentaire peut être visionné. La page d'accueil présente une boucle vidéo d'un bâteau à quai. Deux possibilités s'offrent à nous. Naviguer sur le site, ou visionner le documentaire complet">
+                        <img src="../Portfolio/Images/Accueil_Goeje.png" alt="" data-i18n="school_project1_alt"
+                            data-i18n-target="alt">
                     </a>
-                    <p class="manuscrit text-sort">Réalisation du documentaire "Vivre de la mer à Geoje" à Busan et
-                        Geoje (Corée du Sud) en 2026.</p>
+                    <p class="manuscrit text-sort" data-i18n="school_project1_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Documentaire</span>
+                        <span class="manuscrit" data-i18n="school_project1_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Gestion de projet, prise de son, bruitages, mixage,
-                                mastering, création d'ambiances sonores et montage vidéo.</p>
+                            <p class="manuscrit text-footer" data-i18n="school_project1_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -311,26 +288,23 @@
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Portail des documentaires</h4>
+                    <h4 data-i18n="school_project2"></h4>
                 </div>
                 <div class="carte-desc">
                     <!-- <a href="https://pecherurale.mastercmw.com/" target="_blank">  Le site n'étant pas encore en ligne, il n'est pas accessible pour le moment. A MAJ-->
-                    <img src="../Portfolio/Images/docko.png"
-                        alt="Accueil du portail des documentaires interactifs. On y retrouve une courte description du projet accompagné de la carte permettant de renvoyer vers l'interactif du site.">
+                    <img src="../Portfolio/Images/docko.png" alt="" data-i18n="school_project2_alt"
+                        data-i18n-target="alt">
                     </a>
-                    <p class="manuscrit text-sort">Refonte du portail des documentaires interactifs pour le master
-                        Cultures et Métiers du Web.</p>
+                    <p class="manuscrit text-sort" data-i18n="school_project2_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Chef de projet</span>
+                        <span class="manuscrit" data-i18n="school_project2_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Chef de projet et développement de la partie interactive,
-                                en
-                                collaboration étroite avec notre graphiste.</p>
+                            <p class="manuscrit text-footer" data-i18n="school_project2_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -338,33 +312,32 @@
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Ambiances Sonores</h4>
+                    <h4 data-i18n="sound"></h4>
                 </div>
                 <div class="carte-desc" style="overflow-y: auto;">
-                    <p class="manuscrit text-sort">Travail sur le son pour le documentaire "Vivre de la mer à Geoje".
+                    <p class="manuscrit text-sort" data-i18n="sound_title">
                     </p>
                     <figure>
-                        <figcaption class="label">Piste 1 : Marché au poisson</figcaption>
+                        <figcaption class="label" data-i18n="sound_1"></figcaption>
                         <audio controls src="../Portfolio/son_video/Jagalchi.mp3"></audio>
                     </figure>
                     <figure>
-                        <figcaption class="label">Piste 2 : Livraison de poisson</figcaption>
+                        <figcaption class="label" data-i18n="sound_2"></figcaption>
                         <audio controls src="../Portfolio/son_video/Pecheur.mp3"></audio>
                     </figure>
                     <figure>
-                        <figcaption class="label">Piste 3 : Balade pluvieuse</figcaption>
+                        <figcaption class="label" data-i18n="sound_3"></figcaption>
                         <audio controls src="../Portfolio/son_video/Yeongdo.mp3"></audio>
                     </figure>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Sound Design</span>
+                        <span class="manuscrit" data-i18n="sound_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Création d'ambiances, captation audio, et mixage immersif
-                                pour l'ensemble du projet.</p>
+                            <p class="manuscrit text-footer" data-i18n="sound_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -372,25 +345,22 @@
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Vidéos pour Tera Energies</h4>
+                    <h4 data-i18n="tera"></h4>
                 </div>
                 <div class="carte-desc">
                     <iframe src="https://www.youtube.com/embed/FRYMhfPVg2w?si=LdMeKj2ZOmYEVjUe"
                         title="YouTube video player" frameborder="0" allow="picture-in-picture; 
                         referrerpolicy= " allowfullscreen></iframe>
-                    <p class="manuscrit text-sort">Tournage, réalisation et montage de capsules vidéos pour l'entreprise
-                        Tera Energies depuis février 2026.</p>
+                    <p class="manuscrit text-sort" data-i18n="tera_title"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Réalisation & Montage</span>
+                        <span class="manuscrit" data-i18n="tera_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">À cette occasion, j'ai aussi créé une courte introduction
-                                faite sur Adobe After Effects, ainsi que recréé le logo afin de permettre des
-                                modifications éventuelles.</p>
+                            <p class="manuscrit text-footer" data-i18n="tera_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -398,41 +368,36 @@
 
             <div class="carte-sort verrouille">
                 <div class="carte-header">
-                    <h4>Projet en cours</h4>
+                    <h4 data-i18n="work_progress"></h4>
                 </div>
                 <div class="carte-desc">
-                    <p class="manuscrit text-sort"> Travail sur l'UX d'un site et création d'une boutique en ligne de
-                        vente d'objet pour bébé (en cours).</p>
+                    <p class="manuscrit text-sort" data-i18n="work_progress_tera"></p>
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Inconnu</span>
+                        <span class="manuscrit" data-i18n="work_progress_unknown"></span>
                     </div>
                 </div>
             </div>
 
             <div class="carte-sort">
                 <div class="carte-header">
-                    <h4>Maître du Jeu</h4>
+                    <h4 data-i18n="jdr"></h4>
                 </div>
                 <div class="carte-desc">
-                    <p class="manuscrit text-sort">Initiation au jeu de rôles sur table (Donjons & Dragons) et création
-                        de one-shot dans des univers variés.</p>
-                    <img src="../Portfolio/Images/JDR Noisy-le Grand.png"
-                        alt="Liste des activités proposés par la mairie de Noisy-Le-Grand en novembre 2024. Notre initiation a eu le droit à sa case dans le journal">
+                    <p class="manuscrit text-sort" data-i18n="jdr_title"></p>
+                    <img src="../Portfolio/Images/JDR Noisy-le Grand.png" alt="" data-i18n="jdr_alt"
+                        data-i18n-target="alt">
 
                 </div>
                 <div class="carte-footer">
                     <div class="footer-toggle">
-                        <span class="manuscrit">Création d'univers</span>
+                        <span class="manuscrit" data-i18n="jdr_field"></span>
                         <span class="fleche">↓</span>
                     </div>
                     <div class="footer-contenu-wrapper">
                         <div class="footer-contenu">
-                            <p class="manuscrit text-footer">Depuis 2 ans, j'organise, en tant
-                                que maître du jeu des initiations pour des médiathèques. Je propose aujourd'hui mes
-                                services de création de one-shots sur des thèmes variés en assurant la création de
-                                l'histoire, des personnages et du matériel nécessaire.</p>
+                            <p class="manuscrit text-footer" data-i18n="jdr_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -481,6 +446,44 @@
                 });
             }
         });
+
+
+        //multilingue//
+        let currentLang = localStorage.getItem('languePortfolio') || 'fr';
+
+        const btnFr = document.getElementById('btn-fr');
+        const btnEn = document.getElementById('btn-en');
+
+        fetch('trad.json')
+            .then(response => response.json())
+            .then(translations => {
+
+                function setLanguage(lang) {
+                    document.querySelectorAll('[data-i18n]').forEach(el => {
+                        const key = el.getAttribute('data-i18n');
+
+                        if (translations[lang] && translations[lang][key]) {
+                            if (el.getAttribute('data-i18n-target') === 'alt') {
+                                el.setAttribute('alt', translations[lang][key]);
+                            } else {
+                                el.innerHTML = translations[lang][key];
+                            }
+                        }
+                    });
+
+                    localStorage.setItem('languePortfolio', lang);
+                }
+
+                if (btnFr) {
+                    btnFr.addEventListener('click', () => setLanguage('fr'));
+                }
+                if (btnEn) {
+                    btnEn.addEventListener('click', () => setLanguage('en'));
+                }
+
+                setLanguage(currentLang);
+            });
+
     </script>
 </body>
 <footer>

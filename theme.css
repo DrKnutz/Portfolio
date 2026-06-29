@@ -26,6 +26,25 @@ body {
     padding-left: 20px;
 }
 
+/* Bouton de langue */
+.btn-langue {
+    font-family: 'Valsavo', sans-serif;
+    background-color: #2c1a12; 
+    color: #f7f3e8;
+    border: 2px solid #90553c;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-langue:hover {
+    background-color: #90553c;
+    color: #2c1a12;
+    border-color: #2c1a12;
+}
+
 
 .manuscrit {
     font-size: 0.8rem;
