@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/valsavo');
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,10 +10,22 @@
 
 body {
     font-family: 'Valsavo', sans-serif;
-    background-color: #2c1a12;
-    color: #222;
-    padding: 0 10px;
+    background:
+        radial-gradient(ellipse at center,
+            #90553c 35%,
+            #6f412f 70%,
+            #2c1a12 100%);
+    background-attachment: fixed;
 }
+
+.texte-intro {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
 
 .manuscrit {
     font-size: 0.8rem;
@@ -291,6 +305,32 @@ body {
     border-style: dashed;
 }
 
+.site-footer {
+    margin: 40px auto 20px;
+    padding: 15px 20px;
+    max-width: 1200px;
+    text-align: center;
+
+    background: #fdfbf4;
+    border: 2px solid #5b4a2f;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.site-footer a {
+    color: #5b4a2f;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: inherit;
+    transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+    color: #8a6b3d;
+    text-decoration: underline;
+}
+
+
 /*  La partie ci dessous, utilisé pour cacher le bouton de téléchargement des PDF de mémoire ont été générés via IA, ne sachant comment faire pour éviter 
 tout téléchargement sans mon consentement*/
 
@@ -332,8 +372,8 @@ tout téléchargement sans mon consentement*/
     height: calc(100% - 30px);
 }
 
-        /*Le code généré s'arrete ici*/
-        /*Le responsive n'étant pas opérationnel a 100%, une partie de ce code à été retravaillé via IA*/
+/*Le code généré s'arrete ici*/
+/*Le responsive n'étant pas opérationnel a 100% et n'ayant travaillé que sur des sites non responsive (portail documentaires côté intreactif notamment), une partie de ce code à été retravaillé via IA*/
 
 @media screen and (max-width: 1024px) {
     .fiche-corps {
